@@ -132,7 +132,7 @@ hlBool CFileMapping::OpenInternal(hlUInt uiMode)
 		}
 	}
 #else
-	hlInt iMode;
+	hlInt iMode = O_RDWR;
 	
 	if((uiMode & HL_MODE_READ) && (uiMode & HL_MODE_WRITE))
 	{

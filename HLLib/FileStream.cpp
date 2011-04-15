@@ -82,7 +82,7 @@ hlBool CFileStream::Open(hlUInt uiMode)
 		return hlFalse;
 	}
 #else
-	hlInt iMode;
+	hlInt iMode = O_RDWR;
 	
 	if((uiMode & HL_MODE_READ) && (uiMode & HL_MODE_WRITE))
 	{

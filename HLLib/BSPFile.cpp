@@ -108,7 +108,7 @@ CDirectoryFolder *CBSPFile::CreateRoot()
 	// Loop through each texture in the BSP file.
 	for(hlUInt i = 0; i < this->pTextureHeader->uiTextureCount; i++)
 	{
-		if(this->pTextureHeader->lpOffsets[i] == -1)
+		if((int)(this->pTextureHeader->lpOffsets[i]) == -1)
 		{
 			continue;
 		}

@@ -1,5 +1,5 @@
 CXX		=	g++
-HLLIB_VERS	=	2.3.0
+HLLIB_VERS	=	2.4.0
 LDFLAGS		=	-shared -Wl,-soname,libhl.so.2
 CXXFLAGS	=	-O2 -g -fpic -funroll-loops -fvisibility=hidden
 PREFIX		=	/usr/local
