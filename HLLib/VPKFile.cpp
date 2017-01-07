@@ -101,7 +101,7 @@ hlBool CVPKFile::MapDataStructures()
 		lpViewDirectoryDataEnd = lpViewData + this->pHeader->uiDirectoryLength;
 	}
 
-	while(hlTrue)
+	while(lpViewData != lpViewDirectoryDataEnd)
 	{
 		const hlChar *lpExtension;
 		if(!this->MapString(lpViewData, lpViewDirectoryDataEnd, lpExtension))
